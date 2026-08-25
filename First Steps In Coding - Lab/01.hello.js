@@ -1,6 +1,6 @@
 function hello() {
 
-    console.log('Hello Softuni');
+    console.log('Hello SoftUni');
 
 }
 hello();
