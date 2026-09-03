@@ -4,17 +4,11 @@ function building(countFloors, countRooms) {
 
         let str = '';
 
-
-
         for (let r = 0; r < countRooms; r++) {
-
-
-
 
             if (f === countFloors) {
 
                 str += `L${f}${r} `;
-
 
             }
 
@@ -27,22 +21,11 @@ function building(countFloors, countRooms) {
                 str += `O${f}${r} `;
 
             }
-
-
         }
 
         console.log(str);
 
-
-
     }
-
 }
-// building(6,
-
-//     4);
-building(9,
-
-    5);
-// building();
-// building();
+building(6, 4);
+building(9, 5);
