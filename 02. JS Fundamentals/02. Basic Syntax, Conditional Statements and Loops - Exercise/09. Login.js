@@ -12,34 +12,26 @@ function login(arr) {
 
     for (let i = 1; i <= arr.length - 1; i++) {
 
-        if (count > 3) {
+        if (count === 4) {
 
-            console.log(`User {username} logged in.`);
+            console.log(`User ${userName} blocked!`);
             return;
-
 
         }
 
         if (arr[i] === password) {
 
             console.log(`User ${userName} logged in.`);
-            count++;
-
+            return;
 
         } else {
 
             console.log('Incorrect password. Try again.');
             count++;
 
-
         }
-
-
     }
-
-
 }
-// login(['Acer', 'login', 'go', 'let me in', 'recA']);
+login(['Acer', 'login', 'go', 'let me in', 'recA']);
 // login(['momo', 'omom']);
-login(['sunny', 'rainy', 'cloudy', 'sunny', 'not sunny']);
-// login();
+// login(['sunny', 'rainy', 'cloudy', 'sunny', 'not sunny']);
