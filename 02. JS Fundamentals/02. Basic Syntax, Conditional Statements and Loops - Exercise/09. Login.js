@@ -12,13 +12,6 @@ function login(arr) {
 
     for (let i = 1; i <= arr.length - 1; i++) {
 
-        if (count === 4) {
-
-            console.log(`User ${userName} blocked!`);
-            return;
-
-        }
-
         if (arr[i] === password) {
 
             console.log(`User ${userName} logged in.`);
@@ -26,8 +19,16 @@ function login(arr) {
 
         } else {
 
-            console.log('Incorrect password. Try again.');
             count++;
+
+            if (count === 4 && arr[i] !== password) {
+
+                console.log(`User ${userName} blocked!`);
+                return;
+
+            }
+
+            console.log('Incorrect password. Try again.');
 
         }
     }
